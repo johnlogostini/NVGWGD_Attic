@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c7pmhw5a5j36w"]
+
+[ext_resource type="Texture2D" uid="uid://bviy5t0yffxpq" path="res://Worlds/Attic/Assets/Props/Football/Textures/T_Football.png" id="1_0iii4"]
+
+[resource]
+resource_name = "Material_35"
+albedo_texture = ExtResource("1_0iii4")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
