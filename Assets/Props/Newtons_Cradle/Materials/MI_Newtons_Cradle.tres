@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://clqa7fr2jl3yo"]
+
+[ext_resource type="Texture2D" uid="uid://cen2opjy67e71" path="res://Worlds/Attic/Assets/Props/Newtons_Cradle/Textures/T_Newtons_Cradle_A.png" id="1_ely8i"]
+
+[resource]
+resource_name = "Material_50"
+albedo_texture = ExtResource("1_ely8i")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
