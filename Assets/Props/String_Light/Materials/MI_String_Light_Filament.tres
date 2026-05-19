@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d3ny0d15d5ftt"]
+
+[resource]
+resource_name = "Emissive_Master_Inst1"
+vertex_color_use_as_albedo = true
+roughness = 0.5
+emission_enabled = true
+emission = Color(0.15165642, 0.15165642, 0.15165642, 1)
+emission_energy_multiplier = 60.0
