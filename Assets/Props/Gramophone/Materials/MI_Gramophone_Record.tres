@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bmnnt5p0ywyta"]
+
+[ext_resource type="Texture2D" uid="uid://nuwetnmswymm" path="res://Worlds/Attic/Assets/Props/Gramophone/Textures/T_Gramophone_Record_A.png" id="1_37ph5"]
+
+[resource]
+resource_name = "louisiana_duke-ellington_image_Mat"
+albedo_texture = ExtResource("1_37ph5")
+metallic = 1.0
+roughness = 0.3
+metadata/_gltf_primary_texture_coord = 0
