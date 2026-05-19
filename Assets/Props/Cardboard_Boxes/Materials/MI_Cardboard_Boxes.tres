@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dsck7s3kptjgk"]
+
+[ext_resource type="Texture2D" uid="uid://bma0yj44f2mlo" path="res://Worlds/Attic/Assets/Props/Cardboard_Boxes/Textures/T_Cardboard_Boxes_A.png" id="1_34gig"]
+
+[resource]
+resource_name = "Material_22"
+albedo_texture = ExtResource("1_34gig")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
