@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://xrfx3cqdoin5"]
+
+[ext_resource type="Texture2D" uid="uid://nk135snhmdi3" path="res://Worlds/Attic/Assets/Props/Alphabet_Blocks/Textures/T_Alphabet_Blocks_A.png" id="1_1iiqb"]
+
+[resource]
+resource_name = "Material_13"
+albedo_texture = ExtResource("1_1iiqb")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
