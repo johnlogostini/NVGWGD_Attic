@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bbwniceycqp7o"]
+
+[ext_resource type="Texture2D" uid="uid://evhdhp751svf" path="res://Worlds/Attic/Assets/Props/Filing_Cabinet/Textures/T_Filing_Cabinet_A.png" id="1_sfrt4"]
+
+[resource]
+resource_name = "Material_31"
+albedo_texture = ExtResource("1_sfrt4")
+metallic = 1.0
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
