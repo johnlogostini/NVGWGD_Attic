@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://d0cueamtonivh"]
 
-[ext_resource type="Texture2D" uid="uid://bbhqymlpk74hw" path="res://Worlds/Attic/Assets/Props/Glass_Mug/T_Glass_Mug_A.png" id="1_p0ksl"]
+[ext_resource type="Texture2D" uid="uid://bbhqymlpk74hw" path="res://Worlds/Attic/Assets/Props/Glass_Mug/Textures/T_Glass_Mug_A.png" id="1_p0ksl"]
 
 [resource]
 resource_name = "Material_72_Inst"

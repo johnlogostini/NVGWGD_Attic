@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgynttjpfj56f"
-path.s3tc="res://.godot/imported/T_Glass_Mug_T.png-ccdd229b5a563be41dbf230d415702a0.s3tc.ctex"
+path.s3tc="res://.godot/imported/T_Glass_Mug_T.png-ddb808f3406f9c563a3b16f6f599aa02.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Worlds/Attic/Assets/Props/Glass_Mug/T_Glass_Mug_T.png"
-dest_files=["res://.godot/imported/T_Glass_Mug_T.png-ccdd229b5a563be41dbf230d415702a0.s3tc.ctex"]
+source_file="res://Worlds/Attic/Assets/Props/Glass_Mug/Textures/T_Glass_Mug_T.png"
+dest_files=["res://.godot/imported/T_Glass_Mug_T.png-ddb808f3406f9c563a3b16f6f599aa02.s3tc.ctex"]
 
 [params]
 

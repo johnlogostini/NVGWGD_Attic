@@ -1,6 +1,6 @@
 [gd_resource type="ArrayMesh" format=4 uid="uid://drdrk640cdnyq"]
 
-[ext_resource type="Material" uid="uid://d0cueamtonivh" path="res://Worlds/Attic/Assets/Props/Glass_Mug/MI_Glass_Mug.tres" id="1_rope6"]
+[ext_resource type="Material" uid="uid://d0cueamtonivh" path="res://Worlds/Attic/Assets/Props/Glass_Mug/Materials/MI_Glass_Mug.tres" id="1_rope6"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_a8lg6"]
 _surfaces = [{
