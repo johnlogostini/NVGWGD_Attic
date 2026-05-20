@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://22c3l5gjf7rp"]
+
+[ext_resource type="Texture2D" uid="uid://c5623afc2hl6r" path="res://Worlds/Attic/Assets/Props/Blanket_Bear/Textures/T_Couch_Blanket_A.png" id="1_84vcc"]
+
+[resource]
+resource_name = "Material_5"
+albedo_texture = ExtResource("1_84vcc")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0

@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cmyv5b5ouhpdc"]
+
+[ext_resource type="Texture2D" uid="uid://cs4hvq4binav8" path="res://Worlds/Attic/Assets/Props/Blanket_Bear/Textures/T_Teddy_Bear_A.png" id="1_i5okl"]
+
+[resource]
+resource_name = "Material_4"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_i5okl")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
