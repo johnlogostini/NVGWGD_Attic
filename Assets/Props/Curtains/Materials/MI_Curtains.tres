@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://600ttnot2rmo"]
+
+[ext_resource type="Texture2D" uid="uid://bxcjfihdg4gu6" path="res://Worlds/Attic/Assets/Props/Curtains/Textures/T_Curtains_A.png" id="1_46dij"]
+
+[resource]
+resource_name = "Material_29"
+albedo_texture = ExtResource("1_46dij")
+roughness = 0.25
+metadata/_gltf_primary_texture_coord = 0
