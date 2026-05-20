@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bynb25a3eaq8g"]
+
+[ext_resource type="Texture2D" uid="uid://q3ar6mtanqh0" path="res://Worlds/Attic/Assets/Surfaces/Wood_Boards_01/T_Wood_Boards_01_A.png" id="1_qubi5"]
+[ext_resource type="Texture2D" uid="uid://du3ky6h2aoskd" path="res://Worlds/Attic/Assets/Surfaces/Wood_Boards_01/T_Wood_Boards_01_ORM.png" id="2_1jbmd"]
+[ext_resource type="Texture2D" uid="uid://clr34igngvdic" path="res://Worlds/Attic/Assets/Surfaces/Wood_Boards_01/T_Wood_Boards_01_N.png" id="3_uydqf"]
+
+[resource]
+resource_name = "Wood1_Inst"
+albedo_texture = ExtResource("1_qubi5")
+metallic = 1.0
+metallic_texture = ExtResource("2_1jbmd")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_1jbmd")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_uydqf")
+metadata/_gltf_primary_texture_coord = 0
