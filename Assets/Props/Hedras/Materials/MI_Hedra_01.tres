@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cta7p7hs6sgaf"]
+
+[ext_resource type="Texture2D" uid="uid://clkwjsidj1okd" path="res://Materials/Textures/Default/T_Default_MASK_03.png" id="1_k8qg0"]
+
+[resource]
+resource_name = "Emissive_Master_Inst5"
+transparency = 2
+alpha_scissor_threshold = 0.3333
+alpha_antialiasing_mode = 0
+roughness = 0.5
+emission_enabled = true
+emission = Color(0, 1, 0, 1)
+emission_energy_multiplier = 50.0
+emission_texture = ExtResource("1_k8qg0")
