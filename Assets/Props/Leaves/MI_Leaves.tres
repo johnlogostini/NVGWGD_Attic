@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cskiacd6qbnca"]
+
+[ext_resource type="Texture2D" uid="uid://qdajcuropvpt" path="res://Worlds/Attic/Assets/Props/Leaves/T_Leaves_A.png" id="1_aj7wm"]
+
+[resource]
+resource_name = "09_-_Default"
+transparency = 2
+alpha_scissor_threshold = 0.3333
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_aj7wm")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
