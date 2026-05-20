@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dfof0qdpn7l4v"]
+
+[ext_resource type="Texture2D" uid="uid://cg7joi1k3u3s3" path="res://Worlds/Attic/Assets/Props/Fort/Textures/T_Fort_Blanket_04_A.png" id="1_lfls8"]
+
+[resource]
+resource_name = "Material_12"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_lfls8")
+roughness = 0.0
+metadata/_gltf_primary_texture_coord = 0

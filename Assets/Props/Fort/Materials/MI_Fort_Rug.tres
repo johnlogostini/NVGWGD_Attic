@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://csmjuyhpnlfnf"]
+
+[ext_resource type="Texture2D" uid="uid://b1lfer7fb465p" path="res://Worlds/Attic/Assets/Props/Fort/Textures/T_Fort_Rug_A.png" id="1_ry26t"]
+
+[resource]
+resource_name = "Material_64"
+albedo_texture = ExtResource("1_ry26t")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
