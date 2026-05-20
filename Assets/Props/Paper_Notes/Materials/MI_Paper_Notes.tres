@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://bud26pocaagh7"]
 
-[ext_resource type="Texture2D" uid="uid://cix15a0h0nsx4" path="res://Worlds/Attic/Assets/Textures/OLD/Material_60_BaseColor.png" id="1_dbfpy"]
+[ext_resource type="Texture2D" uid="uid://b5f7044cjbcv7" path="res://Worlds/Attic/Assets/Props/Paper_Notes/Textures/T_Paper_Notes_A.png" id="1_dbfpy"]
 
 [resource]
 resource_name = "Material_60"
