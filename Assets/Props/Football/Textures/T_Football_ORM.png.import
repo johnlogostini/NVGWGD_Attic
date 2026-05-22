@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bviy5t0yffxpq"
-path.s3tc="res://.godot/imported/T_Football.png-f8ac111ce8b5c199fa3e1d4594685f1b.s3tc.ctex"
+uid="uid://pad2k5yiyi45"
+path.s3tc="res://.godot/imported/T_Football_ORM.png-b16df79afc0e340958b596af0aa5d59c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Worlds/Attic/Assets/Props/Football/Textures/T_Football.png"
-dest_files=["res://.godot/imported/T_Football.png-f8ac111ce8b5c199fa3e1d4594685f1b.s3tc.ctex"]
+source_file="res://Worlds/Attic/Assets/Props/Football/Textures/T_Football_ORM.png"
+dest_files=["res://.godot/imported/T_Football_ORM.png-b16df79afc0e340958b596af0aa5d59c.s3tc.ctex"]
 
 [params]
 
@@ -26,8 +26,8 @@ compress/normal_map=2
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal=""
+roughness/mode=3
+roughness/src_normal="uid://dvqc7fhe4o8s4"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
