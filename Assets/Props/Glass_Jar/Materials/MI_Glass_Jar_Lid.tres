@@ -1,10 +1,20 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://cwxmd0tecc6lu"]
 
 [ext_resource type="Texture2D" uid="uid://58blnixxt7q6" path="res://Worlds/Attic/Assets/Props/Glass_Jar/Textures/T_Glass_Jar_Lid_A.png" id="1_om0y0"]
+[ext_resource type="Texture2D" uid="uid://cjyn4gbok41us" path="res://Worlds/Attic/Assets/Props/Glass_Jar/Textures/T_Glass_Jar_Lid_ORM.png" id="2_sjhau"]
+[ext_resource type="Texture2D" uid="uid://bjgfxireq22t7" path="res://Worlds/Attic/Assets/Props/Glass_Jar/Textures/T_Glass_Jar_Lid_N.png" id="3_ffh2c"]
 
 [resource]
 resource_name = "Material_45"
-vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("1_om0y0")
-roughness = 0.5
+metallic = 1.0
+metallic_texture = ExtResource("2_sjhau")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_sjhau")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_ffh2c")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_sjhau")
 metadata/_gltf_primary_texture_coord = 0
