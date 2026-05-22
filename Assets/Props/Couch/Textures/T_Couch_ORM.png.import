@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btxk3rwmvx7bs"
-path.s3tc="res://.godot/imported/T_Couch_R.png-def1a6998925132d2c8b2e6e4b51c279.s3tc.ctex"
+uid="uid://ddyhrxoopt1hg"
+path.s3tc="res://.godot/imported/T_Couch_ORM.png-cc07f1a1a5f14a0c16322f6d394907e5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Worlds/Attic/Assets/Props/Couch/Textures/T_Couch_R.png"
-dest_files=["res://.godot/imported/T_Couch_R.png-def1a6998925132d2c8b2e6e4b51c279.s3tc.ctex"]
+source_file="res://Worlds/Attic/Assets/Props/Couch/Textures/T_Couch_ORM.png"
+dest_files=["res://.godot/imported/T_Couch_ORM.png-cc07f1a1a5f14a0c16322f6d394907e5.s3tc.ctex"]
 
 [params]
 
@@ -26,7 +26,7 @@ compress/normal_map=2
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=6
+roughness/mode=3
 roughness/src_normal="uid://ct2ug3kqom7ly"
 process/channel_remap/red=0
 process/channel_remap/green=1
