@@ -1,10 +1,21 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://3s8eox144k06"]
 
 [ext_resource type="Texture2D" uid="uid://crv3p8era3jrn" path="res://Worlds/Attic/Assets/Surfaces/Pipes_01/T_Pipes_01_A.png" id="1_g5hiw"]
+[ext_resource type="Texture2D" uid="uid://bthp7tknnbyov" path="res://Worlds/Attic/Assets/Surfaces/Pipes_01/T_Pipes_01_ORM.png" id="2_ywyrj"]
+[ext_resource type="Texture2D" uid="uid://cb8t8oiowa5pr" path="res://Worlds/Attic/Assets/Surfaces/Pipes_01/T_Pipes_01_N.png" id="3_4ywtq"]
 
 [resource]
 resource_name = "Material_63"
 vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("1_g5hiw")
-roughness = 0.5
+metallic = 1.0
+metallic_texture = ExtResource("2_ywyrj")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_ywyrj")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_4ywtq")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_ywyrj")
 metadata/_gltf_primary_texture_coord = 0
