@@ -1,9 +1,20 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://c7pmhw5a5j36w"]
 
-[ext_resource type="Texture2D" uid="uid://bviy5t0yffxpq" path="res://Worlds/Attic/Assets/Props/Football/Textures/T_Football.png" id="1_0iii4"]
+[ext_resource type="Texture2D" uid="uid://bviy5t0yffxpq" path="res://Worlds/Attic/Assets/Props/Football/Textures/T_Football_A.png" id="1_n8rr7"]
+[ext_resource type="Texture2D" uid="uid://pad2k5yiyi45" path="res://Worlds/Attic/Assets/Props/Football/Textures/T_Football_ORM.png" id="2_np6y1"]
+[ext_resource type="Texture2D" uid="uid://dvqc7fhe4o8s4" path="res://Worlds/Attic/Assets/Props/Football/Textures/T_Football_N.png" id="3_n5rx5"]
 
 [resource]
 resource_name = "Material_35"
-albedo_texture = ExtResource("1_0iii4")
-roughness = 0.5
+albedo_texture = ExtResource("1_n8rr7")
+metallic = 1.0
+metallic_texture = ExtResource("2_np6y1")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_np6y1")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_n5rx5")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_np6y1")
 metadata/_gltf_primary_texture_coord = 0
