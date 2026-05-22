@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qm11cjumi8gc"
-path.s3tc="res://.godot/imported/T_Telescope_M.png-3387f16db9ce7bed7f6084d44e6123fc.s3tc.ctex"
+uid="uid://c6bndq66rit5k"
+path.s3tc="res://.godot/imported/T_Telescope_ORM.png-c7ffa13ecd7286c7bb455261c2e1e4c1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Worlds/Attic/Assets/Props/Telescope/Textures/T_Telescope_M.png"
-dest_files=["res://.godot/imported/T_Telescope_M.png-3387f16db9ce7bed7f6084d44e6123fc.s3tc.ctex"]
+source_file="res://Worlds/Attic/Assets/Props/Telescope/Textures/T_Telescope_ORM.png"
+dest_files=["res://.godot/imported/T_Telescope_ORM.png-c7ffa13ecd7286c7bb455261c2e1e4c1.s3tc.ctex"]
 
 [params]
 
@@ -26,8 +26,8 @@ compress/normal_map=2
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal=""
+roughness/mode=3
+roughness/src_normal="uid://bg24ec6u2445s"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
