@@ -1,9 +1,20 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://clqa7fr2jl3yo"]
 
 [ext_resource type="Texture2D" uid="uid://cen2opjy67e71" path="res://Worlds/Attic/Assets/Props/Newtons_Cradle/Textures/T_Newtons_Cradle_A.png" id="1_ely8i"]
+[ext_resource type="Texture2D" uid="uid://dio0hdvf3f8o" path="res://Worlds/Attic/Assets/Props/Newtons_Cradle/Textures/T_Newtons_Cradle_ORM.png" id="2_3tk7g"]
+[ext_resource type="Texture2D" uid="uid://cukeo4wofn7mb" path="res://Worlds/Attic/Assets/Props/Newtons_Cradle/Textures/T_Newtons_Cradle_N.png" id="3_uycmi"]
 
 [resource]
 resource_name = "Material_50"
 albedo_texture = ExtResource("1_ely8i")
-roughness = 0.5
+metallic = 1.0
+metallic_texture = ExtResource("2_3tk7g")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_3tk7g")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_uycmi")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_3tk7g")
 metadata/_gltf_primary_texture_coord = 0
