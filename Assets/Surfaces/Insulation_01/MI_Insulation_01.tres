@@ -1,10 +1,21 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://dvfmjd372b5fu"]
 
 [ext_resource type="Texture2D" uid="uid://bdttmysmpj44i" path="res://Worlds/Attic/Assets/Surfaces/Insulation_01/T_Insulation_01_A.png" id="1_vunub"]
+[ext_resource type="Texture2D" uid="uid://kh2vsjn1gvar" path="res://Worlds/Attic/Assets/Surfaces/Insulation_01/T_Insulation_01_ORM.png" id="2_pk7f5"]
+[ext_resource type="Texture2D" uid="uid://n7y108jjq3vp" path="res://Worlds/Attic/Assets/Surfaces/Insulation_01/T_Insulation_01_N.png" id="3_5blee"]
 
 [resource]
 resource_name = "Material_44"
 vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("1_vunub")
-roughness = 0.5
+metallic = 1.0
+metallic_texture = ExtResource("2_pk7f5")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_pk7f5")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_5blee")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_pk7f5")
 metadata/_gltf_primary_texture_coord = 0
