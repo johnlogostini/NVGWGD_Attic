@@ -1,10 +1,20 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://bbwniceycqp7o"]
 
 [ext_resource type="Texture2D" uid="uid://evhdhp751svf" path="res://Worlds/Attic/Assets/Props/Filing_Cabinet/Textures/T_Filing_Cabinet_A.png" id="1_sfrt4"]
+[ext_resource type="Texture2D" uid="uid://1eqhniklqfg0" path="res://Worlds/Attic/Assets/Props/Filing_Cabinet/Textures/T_Filing_Cabinet_ORM.png" id="2_sxgxt"]
+[ext_resource type="Texture2D" uid="uid://kjpcxt05lujw" path="res://Worlds/Attic/Assets/Props/Filing_Cabinet/Textures/T_Filing_Cabinet_N.png" id="3_bl0ug"]
 
 [resource]
 resource_name = "Material_31"
 albedo_texture = ExtResource("1_sfrt4")
 metallic = 1.0
-roughness = 0.5
+metallic_texture = ExtResource("2_sxgxt")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_sxgxt")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_bl0ug")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_sxgxt")
 metadata/_gltf_primary_texture_coord = 0
