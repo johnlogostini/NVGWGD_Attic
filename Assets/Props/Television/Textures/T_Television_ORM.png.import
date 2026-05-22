@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crs30nirh816h"
-path.s3tc="res://.godot/imported/T_Television_M.png-904a32af890fcc23bea76484675fcac6.s3tc.ctex"
+uid="uid://nllu44tw6mnn"
+path.s3tc="res://.godot/imported/T_Television_ORM.png-5b6115439e8b989801343c1899afa212.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Worlds/Attic/Assets/Props/Television/Textures/T_Television_M.png"
-dest_files=["res://.godot/imported/T_Television_M.png-904a32af890fcc23bea76484675fcac6.s3tc.ctex"]
+source_file="res://Worlds/Attic/Assets/Props/Television/Textures/T_Television_ORM.png"
+dest_files=["res://.godot/imported/T_Television_ORM.png-5b6115439e8b989801343c1899afa212.s3tc.ctex"]
 
 [params]
 
@@ -26,8 +26,8 @@ compress/normal_map=2
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal=""
+roughness/mode=3
+roughness/src_normal="uid://cnder1vmxnt47"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
