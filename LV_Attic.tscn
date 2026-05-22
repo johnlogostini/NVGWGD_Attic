@@ -263,6 +263,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9268527, 1.6570898, 12.366
 
 [node name="Props" type="Node3D" parent="." unique_id=381577331]
 
+[node name="SM Television Body" type="MeshInstance3D" parent="Props" unique_id=1883524020]
+transform = Transform3D(0.63606286, 0, 0.7716372, 0, 1, 0, -0.7716372, 0, 0.63606286, -7.2133255, 0.9484441, 4.147066)
+mesh = ExtResource("19_nkhnl")
+
+[node name="SM Television Screen" type="MeshInstance3D" parent="Props/SM Television Body" unique_id=1304607837]
+mesh = ExtResource("119_dtjxj")
+
+[node name="SM Cable Television" type="MeshInstance3D" parent="Props/SM Television Body" unique_id=1778607854]
+transform = Transform3D(0.0063606286, 0, -0.0077163717, 0, 0.01, 0, 0.0077163717, 0, 0.0063606286, -1.8637352, -0.758032, -4.2303123)
+mesh = ExtResource("150_kf40w")
+
+[node name="SM Television Plug" type="MeshInstance3D" parent="Props/SM Television Body" unique_id=59729441]
+transform = Transform3D(0.04274133, 0, -0.051851477, 0, 0.067196704, 0, 0.051851477, 0, 0.04274133, -1.858386, -0.82033503, -4.227087)
+mesh = ExtResource("121_qvdt8")
+
 [node name="Geometry" type="Node3D" parent="." unique_id=1852942520]
 
 [node name="Blockers" type="Node3D" parent="Geometry" unique_id=808233466]
@@ -432,10 +447,6 @@ mesh = ExtResource("2_wuvmj")
 [node name="Blocker 41" type="MeshInstance3D" parent="Geometry/Blockers" unique_id=1620176333]
 transform = Transform3D(0, 2.861724, -1.5826777e-06, 8.496537, 1.0830423e-20, 8.445302e-14, 1.2074306e-13, -7.6212325e-07, -5.942853, -17.442684, 4.1034217, 0.23758712)
 mesh = ExtResource("2_wuvmj")
-
-[node name="SM Cable Television" type="MeshInstance3D" parent="Geometry" unique_id=1778607854]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -11.663045, 0.19041209, 2.8944497)
-mesh = ExtResource("150_kf40w")
 
 [node name="SM Cable String Lights 01" type="MeshInstance3D" parent="Geometry" unique_id=1455928532]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -11.66523, 0.1844176, 2.7940807)
@@ -1239,10 +1250,6 @@ mesh = ExtResource("17_r50y0")
 transform = Transform3D(0.6658615, 0, 0.7460754, 0, 1, 0, -0.7460754, 0, 0.6658615, -5.718905, 1.3273683, -0.22557983)
 mesh = ExtResource("18_2qdh7")
 
-[node name="attic_objects_tv" type="MeshInstance3D" parent="Geometry" unique_id=1883524020]
-transform = Transform3D(0.63606286, 0, 0.7716372, 0, 1, 0, -0.7716372, 0, 0.63606286, -7.2133255, 0.9484441, 4.147066)
-mesh = ExtResource("19_nkhnl")
-
 [node name="attic_objects_jar1" type="MeshInstance3D" parent="Geometry" unique_id=742384517]
 transform = Transform3D(3.1353512, 0, 0, 0, 2.287567, 0, 0, 0, 3.1353512, -5.515347, 1.218389, 11.272309)
 mesh = ExtResource("20_san3a")
@@ -1946,17 +1953,9 @@ mesh = ExtResource("117_e3mto")
 transform = Transform3D(0.7071067, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, 0.7071067, -10.409458, 1.5234036, -17.187525)
 mesh = ExtResource("116_bslvi")
 
-[node name="attic_objects_tv_screen" type="MeshInstance3D" parent="Geometry" unique_id=1304607837]
-transform = Transform3D(0.63606286, 0, 0.7716372, 0, 1, 0, -0.7716372, 0, 0.63606286, -7.2133255, 0.9484441, 4.147066)
-mesh = ExtResource("119_dtjxj")
-
 [node name="1M_Cube_Chamfer" type="MeshInstance3D" parent="Geometry" unique_id=2021747464]
 transform = Transform3D(0.14075644, 0, 0, 0, 0.012893962, 0, 0, 0, 0.20842832, -11.660258, 0.14079529, 2.8422232)
 mesh = ExtResource("120_kpxpp")
-
-[node name="Shape_WideCapsule" type="MeshInstance3D" parent="Geometry" unique_id=59729441]
-transform = Transform3D(0.067196704, 0, 0, 0, 0.067196704, 0, 0, 0, 0.067196704, -11.657153, 0.12810913, 2.8923733)
-mesh = ExtResource("121_qvdt8")
 
 [node name="Shape_WideCapsule2" type="MeshInstance3D" parent="Geometry" unique_id=363044415]
 transform = Transform3D(0.067197, 0, 0, 0, 0.067197, 0, 0, 0, 0.067197, -11.657153, 0.12810913, 2.7943509)
@@ -2073,16 +2072,6 @@ mesh = ExtResource("8_y3wa3")
 [node name="attic_objects_box33" type="MeshInstance3D" parent="Geometry" unique_id=1793278095]
 transform = Transform3D(0.9822669, 0, 0.18748786, 0, 1, 0, -0.18748786, 0, 0.9822669, 1.2248235, 0.49045515, 16.63078)
 mesh = ExtResource("9_epgsc")
-
-[node name="PointLight56" type="Node3D" parent="Geometry" unique_id=110432866]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.274897, 0.76339847, 4.2420154)
-
-[node name="LightNode_PointLight56" type="OmniLight3D" parent="Geometry/PointLight56" unique_id=967496466]
-transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, 0, 0, 0)
-light_color = Color(0.972549, 1, 0.84705883, 1)
-light_energy = 0.0
-omni_range = 10.0
-omni_attenuation = 2.0
 
 [node name="attic_objects_jar2" type="MeshInstance3D" parent="Geometry" unique_id=1400719567]
 transform = Transform3D(1.9248176, 0, 0, 0, 1.7628928, 0, 0, 0, 1.9248176, -5.7644434, 1.1628644, 11.975185)
