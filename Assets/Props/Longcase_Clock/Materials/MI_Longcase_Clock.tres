@@ -1,10 +1,21 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://dptctjk4kwhlq"]
 
 [ext_resource type="Texture2D" uid="uid://da6o478stwngc" path="res://Worlds/Attic/Assets/Props/Longcase_Clock/Textures/T_Longcase_Clock_A.png" id="1_u844q"]
+[ext_resource type="Texture2D" uid="uid://dixu5u1mcfaxs" path="res://Worlds/Attic/Assets/Props/Longcase_Clock/Textures/T_Longcase_Clock_ORM.png" id="2_87mwy"]
+[ext_resource type="Texture2D" uid="uid://big6vym2lo1w" path="res://Worlds/Attic/Assets/Props/Longcase_Clock/Textures/T_Longcase_Clock_N.png" id="3_lthlx"]
 
 [resource]
 resource_name = "Material_26"
 vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("1_u844q")
-roughness = 0.5
+metallic = 1.0
+metallic_texture = ExtResource("2_87mwy")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_87mwy")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_lthlx")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_87mwy")
 metadata/_gltf_primary_texture_coord = 0
