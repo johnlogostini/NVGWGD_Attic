@@ -1,11 +1,18 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://dfof0qdpn7l4v"]
 
 [ext_resource type="Texture2D" uid="uid://cg7joi1k3u3s3" path="res://Worlds/Attic/Assets/Props/Fort/Textures/T_Fort_Blanket_04_A.png" id="1_lfls8"]
+[ext_resource type="Texture2D" uid="uid://c8ivebtxs5ao3" path="res://Worlds/Attic/Assets/Props/Fort/Textures/T_Fort_Blanket_04_ORM.png" id="2_mxawv"]
+[ext_resource type="Texture2D" uid="uid://3w7nvrb5vv06" path="res://Worlds/Attic/Assets/Props/Fort/Textures/T_Fort_Blanket_04_N.png" id="3_76358"]
 
 [resource]
 resource_name = "Material_12"
 cull_mode = 2
 vertex_color_use_as_albedo = true
 albedo_texture = ExtResource("1_lfls8")
-roughness = 0.0
+roughness_texture = ExtResource("2_mxawv")
+normal_enabled = true
+normal_texture = ExtResource("3_76358")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_mxawv")
 metadata/_gltf_primary_texture_coord = 0
