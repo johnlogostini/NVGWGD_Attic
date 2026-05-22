@@ -1,9 +1,20 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://bvkaku8118dxl"]
 
 [ext_resource type="Texture2D" uid="uid://c1tkb0066sh86" path="res://Worlds/Attic/Assets/Props/Books/Textures/T_Book_06_A.png" id="1_gbmy7"]
+[ext_resource type="Texture2D" uid="uid://cp8471jtvsd2u" path="res://Worlds/Attic/Assets/Props/Books/Textures/T_Book_06_ORM.png" id="2_flixw"]
+[ext_resource type="Texture2D" uid="uid://ct505cia0cvx" path="res://Worlds/Attic/Assets/Props/Books/Textures/T_Book_06_N.png" id="3_uirln"]
 
 [resource]
 resource_name = "Material_20"
 albedo_texture = ExtResource("1_gbmy7")
-roughness = 0.5
+metallic = 1.0
+metallic_texture = ExtResource("2_flixw")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_flixw")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_uirln")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_flixw")
 metadata/_gltf_primary_texture_coord = 0
