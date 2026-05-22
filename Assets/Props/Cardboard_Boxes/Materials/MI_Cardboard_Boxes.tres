@@ -1,9 +1,18 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://dsck7s3kptjgk"]
 
 [ext_resource type="Texture2D" uid="uid://bma0yj44f2mlo" path="res://Worlds/Attic/Assets/Props/Cardboard_Boxes/Textures/T_Cardboard_Boxes_A.png" id="1_34gig"]
+[ext_resource type="Texture2D" uid="uid://d1vm0theam48v" path="res://Worlds/Attic/Assets/Props/Cardboard_Boxes/Textures/T_Cardboard_Boxes_ORM.png" id="2_ry8y4"]
+[ext_resource type="Texture2D" uid="uid://cm3gg5use7aw" path="res://Worlds/Attic/Assets/Props/Cardboard_Boxes/Textures/T_Cardboard_Boxes_N.png" id="3_v8vj1"]
 
 [resource]
 resource_name = "Material_22"
 albedo_texture = ExtResource("1_34gig")
-roughness = 0.5
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_ry8y4")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_v8vj1")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_ry8y4")
 metadata/_gltf_primary_texture_coord = 0
