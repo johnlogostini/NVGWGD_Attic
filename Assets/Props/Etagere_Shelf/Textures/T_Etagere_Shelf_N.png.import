@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sw0mkhm72k0o"
-path.s3tc="res://.godot/imported/MI_Etagere_Shelf.png-812f4911a5f3da26fbe3f8fd0213dff8.s3tc.ctex"
+uid="uid://b1c6f58mgs4od"
+path.s3tc="res://.godot/imported/T_Etagere_Shelf_N.png-aca364e51dd4525665c1d5cbe9e68604.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Worlds/Attic/Assets/Props/Etagere_Shelf/Textures/MI_Etagere_Shelf.png"
-dest_files=["res://.godot/imported/MI_Etagere_Shelf.png-812f4911a5f3da26fbe3f8fd0213dff8.s3tc.ctex"]
+source_file="res://Worlds/Attic/Assets/Props/Etagere_Shelf/Textures/T_Etagere_Shelf_N.png"
+dest_files=["res://.godot/imported/T_Etagere_Shelf_N.png-aca364e51dd4525665c1d5cbe9e68604.s3tc.ctex"]
 
 [params]
 
@@ -22,7 +22,7 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=2
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
@@ -34,7 +34,7 @@ process/channel_remap/blue=2
 process/channel_remap/alpha=3
 process/fix_alpha_border=false
 process/premult_alpha=false
-process/normal_map_invert_y=false
+process/normal_map_invert_y=true
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
