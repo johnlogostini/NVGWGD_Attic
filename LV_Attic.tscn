@@ -439,7 +439,6 @@ mesh = ExtResource("150_kf40w")
 
 [node name="SM Cable String Lights 01" type="MeshInstance3D" parent="Geometry" unique_id=1455928532]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -11.66523, 0.1844176, 2.7940807)
-visible = false
 mesh = ExtResource("151_kc24v")
 
 [node name="SM String Light Bulb 01" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 01" unique_id=11142334]
@@ -489,7 +488,6 @@ light_energy = 15.0
 
 [node name="SM Cable String Lights 02" type="MeshInstance3D" parent="Geometry" unique_id=1018123642]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -15.467476, 1.4255253, -0.4291178)
-visible = false
 mesh = ExtResource("152_y3wa3")
 
 [node name="SM String Light Bulb 06" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 02" unique_id=879683581]
@@ -557,7 +555,6 @@ light_energy = 15.0
 
 [node name="SM Cable String Lights 03" type="MeshInstance3D" parent="Geometry" unique_id=1180833587]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.2675924, 0.12772375, -2.4605196)
-visible = false
 mesh = ExtResource("153_epgsc")
 
 [node name="SM String Light Bulb 13" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1431439941]
@@ -2739,7 +2736,6 @@ near = 0.099999994
 
 [node name="Voxel Global Illumination Volume" type="VoxelGI" parent="." unique_id=979389003]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4, -3)
-visible = false
 size = Vector3(32, 12, 50)
 data = ExtResource("149_wuvmj")
 
