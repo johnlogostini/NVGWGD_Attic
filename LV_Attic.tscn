@@ -129,6 +129,14 @@ ssao_power = 3.0
 ssil_enabled = true
 sdfgi_use_occlusion = true
 pathtracing_enabled = true
+fog_mode = 1
+fog_light_color = Color(1, 0.8235294, 0.69803923, 1)
+fog_sun_scatter = 0.01
+fog_density = 0.05
+fog_aerial_perspective = 0.25
+fog_sky_affect = 0.0
+fog_depth_curve = 1.25
+fog_depth_begin = 6.0
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_08n0k"]
 
