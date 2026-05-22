@@ -1,9 +1,18 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://22c3l5gjf7rp"]
 
 [ext_resource type="Texture2D" uid="uid://c5623afc2hl6r" path="res://Worlds/Attic/Assets/Props/Blanket_Bear/Textures/T_Couch_Blanket_A.png" id="1_84vcc"]
+[ext_resource type="Texture2D" uid="uid://c72s6tuq5xsgl" path="res://Worlds/Attic/Assets/Props/Blanket_Bear/Textures/T_Couch_Blanket_ORM.png" id="2_y12f2"]
+[ext_resource type="Texture2D" uid="uid://dxwdkom21p6k5" path="res://Worlds/Attic/Assets/Props/Blanket_Bear/Textures/T_Couch_Blanket_N.png" id="3_qkfde"]
 
 [resource]
 resource_name = "Material_5"
+cull_mode = 2
 albedo_texture = ExtResource("1_84vcc")
-roughness = 0.5
+roughness_texture = ExtResource("2_y12f2")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_qkfde")
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource("2_y12f2")
 metadata/_gltf_primary_texture_coord = 0
