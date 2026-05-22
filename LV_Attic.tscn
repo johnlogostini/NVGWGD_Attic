@@ -128,6 +128,7 @@ ssao_intensity = 1.5
 ssao_power = 3.0
 ssil_enabled = true
 sdfgi_use_occlusion = true
+pathtracing_enabled = true
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_08n0k"]
 
@@ -277,6 +278,42 @@ mesh = ExtResource("150_kf40w")
 [node name="SM Television Plug" type="MeshInstance3D" parent="Props/SM Television Body" unique_id=59729441]
 transform = Transform3D(0.04274133, 0, -0.051851477, 0, 0.067196704, 0, 0.051851477, 0, 0.04274133, -1.858386, -0.82033503, -4.227087)
 mesh = ExtResource("121_qvdt8")
+
+[node name="SM Filing Cabinet 01" type="MeshInstance3D" parent="Props" unique_id=1345250808]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.209619, 1.4427814, 12.072242)
+mesh = ExtResource("10_qhm0s")
+
+[node name="SM Filing Cabinet 02" type="MeshInstance3D" parent="Props" unique_id=2136481658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8695273, 1.4427814, 11.373036)
+mesh = ExtResource("10_qhm0s")
+
+[node name="SM Filing Cabinet 03" type="MeshInstance3D" parent="Props" unique_id=141906417]
+transform = Transform3D(0.8539083, 0, -0.5204235, 0, 1, 0, 0.5204235, 0, 0.8539083, 5.008462, 1.442784, 10.496259)
+mesh = ExtResource("10_qhm0s")
+
+[node name="SM Filing Cabinet 04" type="MeshInstance3D" parent="Props" unique_id=1539280074]
+transform = Transform3D(0.9512262, 0, -0.30849433, 0, 1, 0, 0.30849433, 0, 0.9512262, 5.1889753, 1.4524746, 8.433597)
+mesh = ExtResource("10_qhm0s")
+
+[node name="SM Filing Cabinet 06" type="MeshInstance3D" parent="Props" unique_id=1590889854]
+transform = Transform3D(-1, 0, -1.2246469e-16, 0, 1, 0, 1.2246469e-16, 0, -1, -16.81601, 1.4354763, 11.309492)
+mesh = ExtResource("10_qhm0s")
+
+[node name="SM Filing Cabinet 07" type="MeshInstance3D" parent="Props" unique_id=960975141]
+transform = Transform3D(-1, 0, -1.2246469e-16, 0, 1, 0, 1.2246469e-16, 0, -1, -17.000002, 1.4354763, 10.484441)
+mesh = ExtResource("10_qhm0s")
+
+[node name="SM Filing Cabinet 08" type="MeshInstance3D" parent="Props" unique_id=853943046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1739783, 1.4427818, 0.6703381)
+mesh = ExtResource("10_qhm0s")
+
+[node name="SM Filing Cabinet 09" type="MeshInstance3D" parent="Props" unique_id=2001824381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3986495, 1.4427813, 1.3695434)
+mesh = ExtResource("10_qhm0s")
+
+[node name="SM Filing Cabinet 05" type="MeshInstance3D" parent="Props" unique_id=1358857429]
+transform = Transform3D(-0.19575186, 0, 1.067506, 0, 1.0853055, 0, -1.067506, 0, -0.19575186, 5.164661, 1.4887929, 4.4154196)
+mesh = ExtResource("10_qhm0s")
 
 [node name="Geometry" type="Node3D" parent="." unique_id=1852942520]
 
@@ -459,7 +496,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 01" type="OmniLight3D" parent="Geometry/SM Cable String Lights 01/SM String Light Bulb 01" unique_id=941411442]
 transform = Transform3D(-0.99999887, 0, 0.001516223, 0, 1, 0, -0.001516223, 0, -0.99999887, 0.024806201, -0.10293293, -0.003358841)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 02" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 01" unique_id=1081310672]
 transform = Transform3D(-98.97307, 0, -14.294439, 0, 100, 0, 14.294439, 0, -98.97307, -284.61365, 91.48233, -358.40912)
@@ -468,7 +508,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 02" type="OmniLight3D" parent="Geometry/SM Cable String Lights 01/SM String Light Bulb 02" unique_id=798345726]
 transform = Transform3D(0.14294451, 0, 0.9897307, 0, 1, 0, -0.9897307, 0, 0.14294451, -0.003712654, -0.12109119, 0.00146842)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 03" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 01" unique_id=582335426]
 transform = Transform3D(-71.74059, 0, -69.665535, 0, 100, 0, 69.665535, 0, -71.74059, -284.6112, 86.515884, -421.0211)
@@ -477,7 +520,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 03" type="OmniLight3D" parent="Geometry/SM Cable String Lights 01/SM String Light Bulb 03" unique_id=209195135]
 transform = Transform3D(0.69665545, 0, 0.7174059, 0, 1, 0, -0.7174059, 0, 0.69665545, 0.0032205582, -0.11843091, 0.002544403)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 04" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 01" unique_id=2083455606]
 transform = Transform3D(74.67438, 0, -66.511185, 0, 100, 0, 66.511185, 0, 74.67438, -284.62317, 95.67384, -484.24792)
@@ -486,7 +532,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 04" type="OmniLight3D" parent="Geometry/SM Cable String Lights 01/SM String Light Bulb 04" unique_id=90360932]
 transform = Transform3D(0.66511184, 0, -0.74674386, 0, 1, 0, 0.74674386, 0, 0.66511184, 0.0008420944, -0.122547746, 0.0010528564)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 05" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 01" unique_id=413664975]
 transform = Transform3D(22.344654, -68.592, 69.252106, 95.894585, 28.19863, -3.011185, -17.462719, 67.081856, 72.07689, -305.0902, 120.91058, -535.6855)
@@ -495,7 +544,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 05" type="OmniLight3D" parent="Geometry/SM Cable String Lights 01/SM String Light Bulb 05" unique_id=97273697]
 transform = Transform3D(-0.17462713, 0.95894563, -0.22344647, 0.6708185, 0.2819863, 0.6859198, 0.72076875, -0.030111805, -0.6925211, 0.0047689676, -0.11433411, -0.002483368)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM Cable String Lights 02" type="MeshInstance3D" parent="Geometry" unique_id=1018123642]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -15.467476, 1.4255253, -0.4291178)
@@ -508,7 +560,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 06" type="OmniLight3D" parent="Geometry/SM Cable String Lights 02/SM String Light Bulb 06" unique_id=1066939961]
 transform = Transform3D(-0.12743753, 0.9916725, 0.01858293, -0.9908026, -0.12814036, 0.043475132, 0.045494307, -0.012871681, 0.99888164, -0.011330247, -0.12679756, 0.018193245)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 07" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 02" unique_id=1316332176]
 transform = Transform3D(-8.009195, 37.11597, 92.51084, 95.89439, 28.19925, -3.0115962, -27.205145, 88.471504, -37.850666, 31.902832, 6.8087463, -13.9387665)
@@ -517,7 +572,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 07" type="OmniLight3D" parent="Geometry/SM Cable String Lights 02/SM String Light Bulb 07" unique_id=1689409544]
 transform = Transform3D(-0.2720515, 0.95894384, 0.08009203, 0.8847151, 0.28199247, -0.37115988, -0.3785068, -0.030115988, -0.92510855, -0.003764391, -0.12536144, -0.026411057)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 08" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 02" unique_id=2086514234]
 transform = Transform3D(22.344648, -68.592, 69.25211, 95.894585, 28.198624, -3.011185, -17.462713, 67.08186, 72.07689, 67.47156, 8.452301, -6.616455)
@@ -526,7 +584,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 08" type="OmniLight3D" parent="Geometry/SM Cable String Lights 02/SM String Light Bulb 08" unique_id=1312613314]
 transform = Transform3D(-0.1746271, 0.95894563, -0.22344641, 0.67081857, 0.28198618, 0.68591976, 0.72076875, -0.03011182, -0.6925211, -0.025893569, -0.10701752, -0.013521194)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 09" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 02" unique_id=1501713469]
 transform = Transform3D(17.462748, -67.08184, -72.07689, 95.894554, 28.198683, -3.011191, 22.344698, -68.59198, 69.252106, 75.14612, 1.9839172, 11.934351)
@@ -535,7 +596,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 09" type="OmniLight3D" parent="Geometry/SM Cable String Lights 02/SM String Light Bulb 09" unique_id=1769818084]
 transform = Transform3D(0.223447, 0.95894563, -0.17462751, -0.68591976, 0.28198686, 0.6708185, 0.6925211, -0.030111898, 0.72076887, -0.034075618, -0.11867237, 0.013293266)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 10" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 02" unique_id=829717689]
 transform = Transform3D(-44.592262, 59.730797, 66.661545, 89.46341, 32.07127, 31.108385, -2.7979195, 73.50963, -67.73851, 142.72974, 18.853745, 59.823822)
@@ -544,7 +608,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 10" type="OmniLight3D" parent="Geometry/SM Cable String Lights 02/SM String Light Bulb 10" unique_id=1938788318]
 transform = Transform3D(-0.9999989, -4.2287633e-05, 0.0014986843, -4.2295083e-05, 0.99999994, 1.3202429e-05, -0.0014987141, 1.30832195e-05, -0.9999989, 0.0020451546, -0.115722656, -0.015017509)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 11" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 02" unique_id=958556810]
 transform = Transform3D(-88.61364, -42.454685, 18.580202, -33.226936, 86.1532, 38.38747, -32.304714, 27.8429, -90.44987, 182.41235, 65.471054, 43.647392)
@@ -553,7 +620,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 11" type="OmniLight3D" parent="Geometry/SM Cable String Lights 02/SM String Light Bulb 11" unique_id=2083607197]
 transform = Transform3D(-0.323047, -0.33226937, 0.88613635, 0.27842906, 0.8615319, 0.42454672, -0.90449864, 0.38387465, -0.18580188, -0.00016021729, -0.10683727, 0.005192995)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 12" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 02" unique_id=971580637]
 transform = Transform3D(-60.26074, 60.181225, 52.410515, 70.71054, 70.71073, 0.107081234, -36.99541, 37.124287, -85.165276, 201.30322, 101.72775, 47.44048)
@@ -562,7 +632,10 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 12" type="OmniLight3D" parent="Geometry/SM Cable String Lights 02/SM String Light Bulb 12" unique_id=2057699752]
 transform = Transform3D(-0.9999991, -7.003546e-07, 0.001527518, -6.2584877e-07, 1.0000002, -1.3142824e-05, -0.0015275478, -1.3232231e-05, -0.99999905, -0.0023908615, -0.1156106, -0.0010662079)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
+omni_attenuation = 2.0
 
 [node name="SM Cable String Lights 03" type="MeshInstance3D" parent="Geometry" unique_id=1180833587]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.2675924, 0.12772375, -2.4605196)
@@ -575,8 +648,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 13" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 13" unique_id=455181600]
 transform = Transform3D(-0.45681807, -0.34767592, -0.81880283, -0.88949525, 0.16742203, 0.42516828, -0.010735124, 0.92254585, -0.38573757, 0.0024878979, -0.12662888, 0.009136677)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 14" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1460108951]
@@ -586,8 +660,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 14" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 14" unique_id=144796115]
 transform = Transform3D(-0.45678905, -0.34770223, -0.8188082, -0.88951087, 0.16746241, 0.42511997, -0.010695577, 0.9225288, -0.38577986, 0.0024852753, -0.12662888, 0.009141445)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 15" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=712525183]
@@ -597,8 +672,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 15" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 15" unique_id=796482164]
 transform = Transform3D(-0.4568091, -0.34770066, -0.8187978, -0.8894997, 0.16740102, 0.42516735, -0.010763347, 0.92254066, -0.3857499, 0.0024900436, -0.12662816, 0.009135455)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 16" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1592001836]
@@ -608,8 +684,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 16" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 16" unique_id=1989437528]
 transform = Transform3D(-0.45679277, -0.34771296, -0.8188015, -0.88950807, 0.16740498, 0.42514828, -0.010758072, 0.9225353, -0.38576287, 0.008954287, -0.13265848, -0.0022668839)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 17" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=2076470206]
@@ -619,8 +696,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 17" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 17" unique_id=91561440]
 transform = Transform3D(-0.47911406, -0.711117, 0.5145505, 0.5648209, 0.1989486, 0.80087256, -0.6718832, 0.6743383, 0.30633467, -0.00092315674, -0.12481952, -0.0015501976)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 18" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1313323277]
@@ -629,8 +707,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 18" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 18" unique_id=1894145264]
 transform = Transform3D(-1.7881393e-07, 0, -1, 0, 1, 0, 1, 0, -1.7881393e-07, 0, -0.11078882, 0)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 19" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1362118399]
@@ -639,8 +719,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 19" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 19" unique_id=1926712069]
 transform = Transform3D(-1.7881393e-07, 0, -1, 0, 1, 0, 1, 0, -1.7881393e-07, 0.0004968643, -0.11890626, -0.004615307)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 20" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1737754865]
@@ -649,8 +731,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 20" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 20" unique_id=1181476669]
 transform = Transform3D(0.45762193, -0.028912485, 0.8886767, -0.17460324, 0.977089, 0.12170042, -0.87183493, -0.21085861, 0.44208908, 0.00038337708, -0.110976696, -0.0036139488)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 21" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=666669677]
@@ -659,8 +743,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 21" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 21" unique_id=24180573]
 transform = Transform3D(-1.0430813e-07, -2.0954758e-08, -1.0000001, 0, 1, -1.2572855e-08, 1.0000001, 1.8626451e-09, -2.9802322e-08, -7.1525574e-07, -0.12515473, 9.536743e-07)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 22" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1568722494]
@@ -670,8 +756,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 22" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 22" unique_id=1616619815]
 transform = Transform3D(0.17957294, -0.93949175, -0.29173446, -0.8270683, 0.016387284, -0.5618626, 0.53264606, 0.3421796, -0.7740811, -0.022350311, -0.11196661, -0.017827272)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 23" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=302332729]
@@ -681,8 +768,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 23" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 23" unique_id=1067032300]
 transform = Transform3D(-0.45679265, -0.34771904, -0.81879926, -0.88950825, 0.16740993, 0.42514604, -0.010756344, 0.9225324, -0.3857705, 0.0017101765, -0.12079263, -0.004032135)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 24" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=29691097]
@@ -700,8 +788,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 26" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 26" unique_id=1491335399]
 transform = Transform3D(0.8341152, -0.43864882, 0.3344237, 0.38030338, 0.018194184, -0.9246829, 0.39952645, 0.8984745, 0.1819956, 0.003419876, -0.16272235, 0.0004684925)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 27" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=466305192]
@@ -710,8 +799,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 27" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 27" unique_id=944767423]
 transform = Transform3D(-1.1920929e-07, 1.6763806e-08, -1, 0, 1.0000001, 2.6077032e-08, 1.0000002, -3.7252903e-09, 2.9802322e-08, -4.7683716e-07, -0.12515521, 0)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 28" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=763653981]
@@ -720,8 +811,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 28" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 28" unique_id=193437610]
 transform = Transform3D(0.45762184, -0.028912488, 0.8886765, -0.17460322, 0.97708887, 0.121700406, -0.8718347, -0.21085857, 0.44208902, 0.00038290024, -0.11097574, -0.003613472)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 29" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=975358542]
@@ -730,8 +823,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 29" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 29" unique_id=191666639]
 transform = Transform3D(-1.1920929e-07, -1.8189894e-11, -1, -7.450581e-09, 1, -7.275958e-12, 1, 3.7252903e-09, -1.193257e-07, 0.0004963875, -0.11890602, -0.004615307)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 30" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1214792646]
@@ -740,8 +835,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 30" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 30" unique_id=303874415]
 transform = Transform3D(-1.1920929e-07, -1.8189894e-11, -1, -7.450581e-09, 1, -7.275958e-12, 1, 3.7252903e-09, -1.193257e-07, 0, -0.110788584, -4.7683716e-07)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 31" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=2101957596]
@@ -751,8 +848,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 31" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 31" unique_id=77057541]
 transform = Transform3D(-0.45679283, -0.34769678, -0.8188085, -0.8895084, 0.167423, 0.42514044, -0.010732606, 0.9225381, -0.3857568, 0.009499073, -0.12753296, -0.00344038)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 32" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=960849767]
@@ -762,8 +860,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 32" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 32" unique_id=995702134]
 transform = Transform3D(-0.45677358, -0.34771723, -0.8188108, -0.88951844, 0.16742723, 0.42511797, -0.0107293725, 0.92252976, -0.38577706, 0.0024909973, -0.12663078, 0.009141922)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 33" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1035260292]
@@ -773,8 +872,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 33" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 33" unique_id=2037365767]
 transform = Transform3D(-0.45675516, -0.34770936, -0.8188242, -0.8895279, 0.1674321, 0.42509583, -0.010712415, 0.9225317, -0.3857727, -0.0084376335, -0.123251915, 0.017933846)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 34" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1288079000]
@@ -784,8 +884,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 34" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 34" unique_id=1305111718]
 transform = Transform3D(-0.45679748, -0.34771222, -0.8187992, -0.88950586, 0.16742775, 0.4251437, -0.010737933, 0.92253137, -0.38577265, 0.014998436, -0.12184811, 0.003768444)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 35" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=362125120]
@@ -794,8 +895,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 35" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 35" unique_id=659936957]
 transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, 0, -0.11078882, 0)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 36" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1906512400]
@@ -804,8 +907,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 36" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 36" unique_id=1710227439]
 transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, 0.0004968643, -0.11890626, -0.00461483)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 37" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1426641159]
@@ -814,8 +919,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 37" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 37" unique_id=1760418203]
 transform = Transform3D(0.45762187, -0.028912457, 0.88867646, -0.17460324, 0.9770888, 0.12170042, -0.8718345, -0.21085861, 0.4420891, 0.00038337708, -0.11097646, -0.003616333)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 38" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1232827189]
@@ -824,8 +931,10 @@ mesh = ExtResource("42_qtabn")
 
 [node name="String Light Omni Light 38" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 38" unique_id=1956986326]
 transform = Transform3D(-8.940697e-08, 1.21071935e-08, -1, 0, 1, 6.9849193e-09, 1, -7.450581e-09, -4.4703484e-08, 0, -0.12515509, 0)
-light_color = Color(0.7098039, 0.88235295, 0.34509805, 1)
-light_energy = 15.0
+light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 39" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1270403209]
@@ -835,8 +944,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 39" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 39" unique_id=118284462]
 transform = Transform3D(-0.45673275, -0.34778106, -0.81880605, -0.8895405, 0.16754453, 0.42502546, -0.010629281, 0.9224842, -0.3858884, -0.010314941, -0.12033844, 0.007055044)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 40" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1913080854]
@@ -846,8 +956,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 40" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 40" unique_id=1278913135]
 transform = Transform3D(-0.45676106, -0.34775487, -0.8188016, -0.88952637, 0.16758043, 0.42504084, -0.010595005, 0.9224877, -0.3858813, -5.8174133e-05, -0.112623215, 0.0068261027)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 41" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1744490412]
@@ -857,8 +968,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 41" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 41" unique_id=322175302]
 transform = Transform3D(0.8416201, 0.15891412, -0.51616096, -0.53735244, 0.34215596, -0.7708318, 0.05411141, 0.92610776, 0.3733583, -0.022135735, -0.11345136, 0.036206245)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 42" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=666276438]
@@ -868,8 +980,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 42" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 42" unique_id=878001525]
 transform = Transform3D(0.5222483, -0.8224516, 0.2254557, -0.35397977, -0.4495857, -0.8201043, 0.77585775, 0.3484913, -0.52592665, -0.0022768974, -0.12057924, 0.017502785)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 43" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1665632991]
@@ -879,8 +992,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 43" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 43" unique_id=2004863489]
 transform = Transform3D(-0.45681906, -0.34781036, -0.8187456, -0.8894953, 0.16752446, 0.42512798, -0.010704011, 0.92247677, -0.3859041, 0.002869606, -0.119506836, 0.021691322)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 44" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1193488754]
@@ -890,8 +1004,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 44" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 44" unique_id=1792173322]
 transform = Transform3D(0.29984206, -0.8020698, -0.51650643, -0.91394097, -0.3967346, 0.08551866, -0.27350798, 0.4464143, -0.85200214, 0.0337162, -0.13634586, -0.0027594566)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 45" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1564559220]
@@ -901,8 +1016,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 45" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 45" unique_id=283039392]
 transform = Transform3D(-0.45674703, -0.34783733, -0.8187744, -0.88952947, 0.16725542, 0.42516258, -0.010942906, 0.9225155, -0.38580495, 0.013787985, -0.12826252, 0.00029921532)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 46" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=978958235]
@@ -912,8 +1028,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 46" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 46" unique_id=1053682941]
 transform = Transform3D(-0.45673805, -0.34782678, -0.8187838, -0.8895337, 0.16722912, 0.42516372, -0.010958791, 0.9225242, -0.38578352, 0.012706757, -0.1194042, 0.016305923)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 47" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1498961577]
@@ -923,8 +1040,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 47" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 47" unique_id=1357959116]
 transform = Transform3D(-0.4567645, -0.34778035, -0.81878877, -0.88952124, 0.16730206, 0.42516136, -0.010877728, 0.9225286, -0.3857755, 0.01313591, -0.13239098, 0.0012845993)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 48" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1900316887]
@@ -934,8 +1052,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 48" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 48" unique_id=1794223899]
 transform = Transform3D(-0.45672545, -0.3478666, -0.81877387, -0.8895395, 0.16718763, 0.42516786, -0.011012823, 0.92251676, -0.3857999, 0.014306307, -0.13275623, 0.014679372)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 49" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=658844638]
@@ -945,8 +1064,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 49" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 49" unique_id=2132451578]
 transform = Transform3D(-0.14301366, 0.7065236, 0.69308835, -0.98761594, -0.14752135, -0.053406224, 0.064512596, -0.692143, 0.7188716, 0.00820303, -0.13181686, -0.028248787)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM String Light Bulb 50" type="MeshInstance3D" parent="Geometry/SM Cable String Lights 03" unique_id=1570057598]
@@ -956,8 +1076,9 @@ mesh = ExtResource("42_qtabn")
 [node name="String Light Omni Light 50" type="OmniLight3D" parent="Geometry/SM Cable String Lights 03/SM String Light Bulb 50" unique_id=1231521615]
 transform = Transform3D(-0.1269515, -0.99109715, -0.040123798, -0.94501954, 0.13314123, -0.29868338, 0.30136633, -5.0291425e-07, -0.95350856, -0.007934332, -0.11356354, 0.017156124)
 light_color = Color(0.8588235, 0.92156863, 0.6392157, 1)
-light_energy = 15.0
-omni_range = 7.5
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 4.0
 omni_attenuation = 2.0
 
 [node name="SM Star Night Light 01" type="MeshInstance3D" parent="Geometry" unique_id=756665054]
@@ -1174,22 +1295,6 @@ mesh = ExtResource("8_y3wa3")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.183712, 0.48299757, -0.7060684)
 mesh = ExtResource("9_epgsc")
 
-[node name="attic_objects_cabinet" type="MeshInstance3D" parent="Geometry" unique_id=142966674]
-transform = Transform3D(0.8539083, 0, -0.5204235, 0, 1, 0, 0.5204235, 0, 0.8539083, 5.008462, 1.442784, 10.496259)
-mesh = ExtResource("10_qhm0s")
-
-[node name="attic_objects_cabinet2" type="MeshInstance3D" parent="Geometry" unique_id=1682231274]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8695273, 1.4427814, 11.373036)
-mesh = ExtResource("10_qhm0s")
-
-[node name="attic_objects_cabinet3" type="MeshInstance3D" parent="Geometry" unique_id=2026920804]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.209619, 1.4427814, 12.072242)
-mesh = ExtResource("10_qhm0s")
-
-[node name="attic_objects_cabinet4" type="MeshInstance3D" parent="Geometry" unique_id=1840465727]
-transform = Transform3D(0.9512262, 0, -0.30849433, 0, 1, 0, 0.30849433, 0, 0.9512262, 5.1889753, 1.4524746, 8.433597)
-mesh = ExtResource("10_qhm0s")
-
 [node name="attic_objects_chairs2" type="MeshInstance3D" parent="Geometry" unique_id=512850133]
 transform = Transform3D(0.90697783, 0, -0.42117837, 0, 1, 0, 0.42117837, 0, 0.90697783, -12.493992, 0.8617985, 2.4702044)
 mesh = ExtResource("11_oeuu8")
@@ -1221,14 +1326,6 @@ mesh = ExtResource("15_cb387")
 [node name="attic_objects_shelf2" type="MeshInstance3D" parent="Geometry" unique_id=1670099655]
 transform = Transform3D(0.93158674, 0, -0.36351916, 0, 1, 0, 0.36351916, 0, 0.93158674, -16.484346, 2.2392733, 8.876394)
 mesh = ExtResource("15_cb387")
-
-[node name="attic_objects_cabinet6" type="MeshInstance3D" parent="Geometry" unique_id=2094010065]
-transform = Transform3D(-1, 0, -1.2246469e-16, 0, 1, 0, 1.2246469e-16, 0, -1, -16.81601, 1.4354763, 11.309492)
-mesh = ExtResource("10_qhm0s")
-
-[node name="attic_objects_cabinet7" type="MeshInstance3D" parent="Geometry" unique_id=1826091405]
-transform = Transform3D(-1, 0, -1.2246469e-16, 0, 1, 0, 1.2246469e-16, 0, -1, -17.000002, 1.4354763, 10.484441)
-mesh = ExtResource("10_qhm0s")
 
 [node name="attic_objects_boxes3" type="MeshInstance3D" parent="Geometry" unique_id=840824162]
 transform = Transform3D(0.6529192, 0, 0.24671657, 0, 0.6979774, 0, -0.24671657, 0, 0.6529192, 0.637293, 0.80955106, 8.055783)
@@ -1385,14 +1482,6 @@ mesh = ExtResource("9_epgsc")
 [node name="attic_objects_book_shelf2" type="MeshInstance3D" parent="Geometry" unique_id=807662665]
 transform = Transform3D(0.31424534, 0, 0.94934183, 0, 1, 0, -0.94934183, 0, 0.31424534, -12.737064, 2.140075, -7.3391647)
 mesh = ExtResource("34_b17b4")
-
-[node name="attic_objects_cabinet8" type="MeshInstance3D" parent="Geometry" unique_id=1093087316]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1739783, 1.4427818, 0.6703381)
-mesh = ExtResource("10_qhm0s")
-
-[node name="attic_objects_cabinet9" type="MeshInstance3D" parent="Geometry" unique_id=836789681]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3986495, 1.4427813, 1.3695434)
-mesh = ExtResource("10_qhm0s")
 
 [node name="attic_objects_frame_picture1" type="MeshInstance3D" parent="Geometry" unique_id=187394357]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9773877, 2.8825798, 3.3739085)
@@ -1773,10 +1862,6 @@ mesh = ExtResource("38_v5kvy")
 [node name="attic_objects_boxes21" type="MeshInstance3D" parent="Geometry" unique_id=1088365214]
 transform = Transform3D(-0.19354363, 0, 0.48555002, 0, 0.5227025, 0, -0.48555002, 0, -0.19354363, 4.612481, 0.60320395, 7.9419413)
 mesh = ExtResource("8_y3wa3")
-
-[node name="attic_objects_cabinet10" type="MeshInstance3D" parent="Geometry" unique_id=772373226]
-transform = Transform3D(-0.19575186, 0, 1.067506, 0, 1.0853055, 0, -1.067506, 0, -0.19575186, 5.164661, 1.4887929, 4.4154196)
-mesh = ExtResource("10_qhm0s")
 
 [node name="attic_objects_box23" type="MeshInstance3D" parent="Geometry" unique_id=1379319966]
 transform = Transform3D(0.2941234, 0, -0.058903243, 0, 0.30024, 0, 0.044939566, 0, 0.38551375, -2.6110039, 1.875441, -5.238343)
