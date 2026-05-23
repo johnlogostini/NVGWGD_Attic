@@ -56,6 +56,7 @@
 [ext_resource type="ArrayMesh" uid="uid://dgmn735lbn213" path="res://Worlds/Attic/Assets/Props/Paintings/Meshes/SM_Painting_04.tres" id="55_t70gf"]
 [ext_resource type="ArrayMesh" uid="uid://djijlpkdb43dj" path="res://Worlds/Attic/Assets/Props/Paintings/Meshes/SM_Painting_05.tres" id="56_bbvsr"]
 [ext_resource type="ArrayMesh" uid="uid://btif61v0ks0t0" path="res://Worlds/Attic/Assets/Props/Paintings/Meshes/SM_Painting_06.tres" id="57_krj7m"]
+[ext_resource type="Texture2D" uid="uid://doqnhafky0xkp" path="res://Worlds/Attic/Assets/Environments/Sandy_Area.hdr" id="81_l66dt"]
 [ext_resource type="ArrayMesh" uid="uid://bpglr0l3o8msg" path="res://Worlds/Attic/Assets/Props/Gramophone/Meshes/SM_Gramophone_Winder.tres" id="113_oyu3x"]
 [ext_resource type="ArrayMesh" uid="uid://sj4o3clyqyew" path="res://Worlds/Attic/Assets/Props/Gramophone/Meshes/SM_Gramophone_Record.tres" id="114_g5m1p"]
 [ext_resource type="ArrayMesh" uid="uid://bj20qejplb705" path="res://Worlds/Attic/Assets/Props/Gramophone/Meshes/SM_Gramophone_Horn.tres" id="115_qd33l"]
@@ -103,30 +104,27 @@ bind/5/name = &"Dummy006"
 bind/5/bone = -1
 bind/5/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8767297, 1.4576365)
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wuvmj"]
-sky_top_color = Color(0.79607844, 0.5882353, 0.58431375, 1)
-sky_horizon_color = Color(1, 0.7529412, 0.6156863, 1)
-sky_energy_multiplier = 1.5
-ground_bottom_color = Color(1, 0.7529412, 0.6156863, 1)
-ground_horizon_color = Color(1, 0.7529412, 0.6156863, 1)
-ground_energy_multiplier = 1.5
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2h110"]
+panorama = ExtResource("81_l66dt")
+energy_multiplier = 10.0
 
 [sub_resource type="Sky" id="Sky_08n0k"]
-sky_material = SubResource("ProceduralSkyMaterial_wuvmj")
-radiance_size = 6
+sky_material = SubResource("PanoramaSkyMaterial_2h110")
 
 [sub_resource type="Environment" id="Environment_wuvmj"]
 background_mode = 2
 sky = SubResource("Sky_08n0k")
 ambient_light_source = 3
-ambient_light_sky_contribution = 0.05
+ambient_light_sky_contribution = 0.01
 reflected_light_source = 1
 ssr_enabled = true
 ssr_max_steps = 128
 ssao_enabled = true
+ssao_radius = 2.0
 ssao_intensity = 1.5
 ssao_power = 3.0
 ssil_enabled = true
+sdfgi_enabled = true
 sdfgi_use_occlusion = true
 pathtracing_enabled = true
 fog_mode = 1
@@ -152,9 +150,9 @@ transform = Transform3D(0.8660254, 0, 0.5, 0, 1, 0, -0.5, 0, 0.8660254, -11.8155
 [node name="Lighting" type="Node3D" parent="." unique_id=1973866807]
 
 [node name="Directional Light Sun" type="DirectionalLight3D" parent="Lighting" unique_id=1700730632]
-transform = Transform3D(0.42521957, -0.31581417, 0.84820384, -0.009957421, 0.9354593, 0.3532941, -0.9050355, -0.15867348, 0.39463088, -2.088621, 3.0121984, -13.239356)
-light_color = Color(1, 0.8784314, 0.8156863, 1)
-light_energy = 16.0
+transform = Transform3D(0.4252195, -0.31581417, 0.8482039, -0.009957421, 0.9354593, 0.35329407, -0.90503556, -0.15867347, 0.39463082, -2.088621, 3.0121984, -13.239356)
+light_color = Color(1, 0.54901963, 0.30588236, 1)
+light_energy = 64.0
 light_angular_distance = 1.1
 light_bake_mode = 1
 shadow_enabled = true
