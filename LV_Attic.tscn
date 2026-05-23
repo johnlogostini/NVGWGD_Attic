@@ -1153,6 +1153,7 @@ mesh = ExtResource("48_i0ysp")
 transform = Transform3D(-1.1920929e-07, 2.2555469e-09, -1, -6.6393113e-09, 0.99999994, 1.9485014e-08, 1, -1.7862476e-09, -1.7881393e-07, 0.0099544525, 0.01718378, -0.0051556826)
 light_color = Color(0.7490196, 0.8196078, 1, 1)
 light_energy = 2.0
+shadow_enabled = true
 omni_attenuation = 2.0
 
 [node name="SM Star Night Light 02" type="MeshInstance3D" parent="Geometry" unique_id=152480348]
