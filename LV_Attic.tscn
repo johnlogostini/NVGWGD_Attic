@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b387k1slfyjjf"]
 
+[ext_resource type="Script" uid="uid://chc483q3hqv0c" path="res://Worlds/Attic/Attic.gd" id="1_2h110"]
 [ext_resource type="ArrayMesh" uid="uid://skjldfuvyq4" path="res://Worlds/Attic/Assets/Meshes/Blockers/Meshes/SM_Blocker_Cube_02.tres" id="1_xg5yv"]
 [ext_resource type="ArrayMesh" uid="uid://ddbsblxbn7oe" path="res://Worlds/Attic/Assets/Meshes/Blockers/Meshes/SM_Blocker_Cube_01.tres" id="2_wuvmj"]
 [ext_resource type="ArrayMesh" uid="uid://c2hk0rxw6awv4" path="res://Worlds/Attic/Assets/Props/Fort/Meshes/SM_Fort.tres" id="3_08n0k"]
@@ -149,6 +150,7 @@ adjustment_brightness = 1.3
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_08n0k"]
 
 [node name="Attic" type="Node3D" unique_id=1312979059]
+script = ExtResource("1_2h110")
 
 [node name="Gameplay" type="Node3D" parent="." unique_id=1112275731]
 
