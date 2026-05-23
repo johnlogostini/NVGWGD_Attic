@@ -501,6 +501,26 @@ mesh = ExtResource("2_wuvmj")
 transform = Transform3D(0, 2.861724, -1.5826777e-06, 8.496537, 1.0830423e-20, 8.445302e-14, 1.2074306e-13, -7.6212325e-07, -5.942853, -17.442684, 4.1034217, 0.23758712)
 mesh = ExtResource("2_wuvmj")
 
+[node name="Blocker 42" type="MeshInstance3D" parent="Geometry/Blockers" unique_id=341902343]
+transform = Transform3D(1.4713074e-05, 1.3099768, -6.9951165e-07, 1.003164e-06, -3.123228e-07, -2.933966, -11.220201, 1.7177754e-06, -2.623179e-07, -18.60562, 7.0612597, 12.833199)
+mesh = ExtResource("2_wuvmj")
+
+[node name="Blocker 43" type="MeshInstance3D" parent="Geometry/Blockers" unique_id=890791916]
+transform = Transform3D(-1, 0, -1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, -18.061018, 4.310174, -1.6594464)
+mesh = ExtResource("40_p4pul")
+
+[node name="Blocker 44" type="MeshInstance3D" parent="Geometry/Blockers" unique_id=2123987708]
+transform = Transform3D(1.6055095e-05, 2.8856237, -6.995115e-07, 1.0946654e-06, -6.879863e-07, -2.9339652, -12.243627, 3.7839243e-06, -2.6231783e-07, -17.441278, 7.8156605, 13.682028)
+mesh = ExtResource("2_wuvmj")
+
+[node name="Blocker 45" type="MeshInstance3D" parent="Geometry/Blockers" unique_id=544419137]
+transform = Transform3D(0, 0.6075933, -4.0415344e-07, 8.496537, 2.2994856e-21, 2.156597e-14, 1.2074306e-13, -1.6181191e-07, -1.5175703, -18.244856, 4.1034217, -2.3343306)
+mesh = ExtResource("2_wuvmj")
+
+[node name="Blocker 46" type="MeshInstance3D" parent="Geometry/Blockers" unique_id=473273017]
+transform = Transform3D(0, 0.6075933, -4.0415344e-07, 8.496537, 2.2994856e-21, 2.156597e-14, 1.2074306e-13, -1.6181191e-07, -1.5175703, -18.244856, 4.1034217, -7.2074003)
+mesh = ExtResource("2_wuvmj")
+
 [node name="SM Cable String Lights 01" type="MeshInstance3D" parent="Geometry" unique_id=1455928532]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -11.66523, 0.1844176, 2.7940807)
 mesh = ExtResource("151_kc24v")
