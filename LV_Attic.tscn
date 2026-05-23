@@ -2895,6 +2895,7 @@ near = 0.099999994
 
 [node name="Voxel Global Illumination Volume" type="VoxelGI" parent="." unique_id=979389003]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4, -3)
+subdiv = 3
 size = Vector3(32, 12, 50)
 data = ExtResource("149_wuvmj")
 
