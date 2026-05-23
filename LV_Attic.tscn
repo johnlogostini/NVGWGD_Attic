@@ -117,6 +117,9 @@ sky = SubResource("Sky_08n0k")
 ambient_light_source = 3
 ambient_light_sky_contribution = 0.01
 reflected_light_source = 1
+tonemap_mode = 4
+tonemap_exposure = 1.5
+tonemap_agx_contrast = 1.15
 ssr_enabled = true
 ssr_max_steps = 128
 ssao_enabled = true
@@ -138,6 +141,8 @@ fog_sun_scatter = 0.01
 fog_aerial_perspective = 1.0
 fog_sky_affect = 0.0
 fog_depth_begin = 2.0
+adjustment_enabled = true
+adjustment_brightness = 1.5
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_08n0k"]
 
