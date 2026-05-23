@@ -142,6 +142,7 @@ fog_density = 0.01
 fog_aerial_perspective = 1.0
 fog_sky_affect = 0.0
 fog_depth_begin = 2.0
+volumetric_fog_density = 0.005
 adjustment_enabled = true
 adjustment_brightness = 1.3
 
