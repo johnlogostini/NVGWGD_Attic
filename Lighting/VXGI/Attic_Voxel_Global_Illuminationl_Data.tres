@@ -1,4 +1,6 @@
 [gd_resource type="VoxelGIData" format=3 uid="uid://c5uqwojjfhmeu"]
 
 [resource]
+energy = 8.0
+propagation = 0.7
 interior = true
