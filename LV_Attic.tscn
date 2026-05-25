@@ -69,9 +69,9 @@
 [ext_resource type="ArrayMesh" uid="uid://dpq6ccrk78mgg" path="res://Worlds/Attic/Assets/Props/Electrical_Outlet/SM_Electrical_Outlet_Plug.tres" id="121_qvdt8"]
 [ext_resource type="ArrayMesh" uid="uid://tap5h51on20m" path="res://Worlds/Attic/Assets/Props/Electrical_Outlet/SM_Electrical_Outlet_Cap.tres" id="122_pnuqj"]
 [ext_resource type="ArrayMesh" uid="uid://v15n5773bp7d" path="res://Worlds/Attic/Assets/Props/Wooden_Rocking_Horse/Meshes/SM_Wooden_Rocking_Horse.tres" id="123_ob6tr"]
-[ext_resource type="ArrayMesh" uid="uid://cf3mgq32rg0bu" path="res://Worlds/Attic/Assets/Props/Hedras/Meshes/SM_Hedra_01.tres" id="125_hew8h"]
-[ext_resource type="ArrayMesh" uid="uid://d10n3ylr2i5nx" path="res://Worlds/Attic/Assets/Props/Hedras/Meshes/SM_Hedra_02.tres" id="126_5kink"]
-[ext_resource type="ArrayMesh" uid="uid://lfnvkrnb246c" path="res://Worlds/Attic/Assets/Props/Hedras/Meshes/SM_Hedra_03.tres" id="127_x5man"]
+[ext_resource type="ArrayMesh" uid="uid://cf3mgq32rg0bu" path="res://Worlds/Attic/Assets/Props/Artifacts/Meshes/SM_Artifact_01.tres" id="125_hew8h"]
+[ext_resource type="ArrayMesh" uid="uid://d10n3ylr2i5nx" path="res://Worlds/Attic/Assets/Props/Artifacts/Meshes/SM_Artifact_02.tres" id="126_5kink"]
+[ext_resource type="ArrayMesh" uid="uid://lfnvkrnb246c" path="res://Worlds/Attic/Assets/Props/Artifacts/Meshes/SM_Artifact_03.tres" id="127_x5man"]
 [ext_resource type="ArrayMesh" uid="uid://cf1wltmso7ul4" path="res://Worlds/Attic/Assets/Props/Paintings/Meshes/SM_Painting_07.tres" id="140_nxyyx"]
 [ext_resource type="ArrayMesh" uid="uid://cgch3sn0in1p8" path="res://Worlds/Attic/Assets/Props/Mirror/Meshes/SM_Mirror_Stand.tres" id="141_m5o1c"]
 [ext_resource type="ArrayMesh" uid="uid://cnt813cu6u02x" path="res://Worlds/Attic/Assets/Props/Mirror/Meshes/SM_Mirror.tres" id="142_rijni"]
@@ -2883,17 +2883,17 @@ curve = SubResource("Curve3D_l66dt")
 transform = Transform3D(-0.5184237, 0.16809063, 0.83838, 0.0058649397, 0.98111314, -0.19308038, -0.855053, -0.09518474, -0.50963914, -9.336985, 2.434993, -14.233571)
 progress = 56.99
 
-[node name="SM Hedra01" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 01" unique_id=2086930131]
+[node name="SM Artifact 01" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 01" unique_id=2086930131]
 transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
 cast_shadow = 0
 gi_mode = 2
 mesh = ExtResource("125_hew8h")
 
 [node name="Path Follow 02" type="PathFollow3D" parent="Geometry/Floating Light Path" unique_id=545180998]
-transform = Transform3D(0.90092963, -0.41873845, 0.11348788, 0.4114004, 0.9076294, 0.082889885, -0.13771747, -0.0279904, 0.9900379, -0.6552098, 5.18741, -2.4036055)
+transform = Transform3D(0.90092963, -0.41873845, 0.11348784, 0.4114004, 0.9076294, 0.08288986, -0.13771747, -0.0279904, 0.9900376, -0.6552098, 5.18741, -2.4036055)
 progress = 33.4
 
-[node name="SM Hedra02" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 02" unique_id=1555092757]
+[node name="SM Artifact 02" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 02" unique_id=1555092757]
 transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
 gi_mode = 2
 mesh = ExtResource("126_5kink")
@@ -2901,7 +2901,7 @@ mesh = ExtResource("126_5kink")
 [node name="Path Follow 03" type="PathFollow3D" parent="Geometry/Floating Light Path" unique_id=1170880294]
 transform = Transform3D(-0.89631194, 0.26062843, -0.3587062, 1.4900961e-08, 0.8089909, 0.58779573, 0.4433936, 0.52685547, -0.7251179, -7.859, 1.294, 2.412)
 
-[node name="SM Hedra 03" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 03" unique_id=906867285]
+[node name="SM Artifact 03" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 03" unique_id=906867285]
 transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
 gi_mode = 2
 mesh = ExtResource("127_x5man")

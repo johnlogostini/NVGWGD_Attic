@@ -1,6 +1,6 @@
 [gd_resource type="ArrayMesh" format=4 uid="uid://d10n3ylr2i5nx"]
 
-[ext_resource type="Material" uid="uid://4iajk1qpw2u2" path="res://Worlds/Attic/Assets/Props/Hedras/Materials/MI_Hedra_02.tres" id="1_n4vvo"]
+[ext_resource type="Material" uid="uid://4iajk1qpw2u2" path="res://Worlds/Attic/Assets/Props/Artifacts/Materials/MI_Artifact_02.tres" id="1_0yxkg"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_bvyyc"]
 _surfaces = [{
@@ -24,7 +24,7 @@ _surfaces = [{
 "format": 34896613407,
 "index_count": 180,
 "index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgACQAKAAsADAANAA4ADwAQABEAEgATABQAFQAWABcAGAAZABoAGwAcAB0AHgAfACAAIQAiACMAJAAlACYAJwAoACkAKgArACwALQAuAC8AMAAxADIAMwA0ADUANgA3ADgAOQA6ADsAPAA9AD4APwBAAEEAQgBDAEQARQBGAEcASABJAEoASwBMAE0ATgBPAFAAUQBSAFMAVABVAFYAVwBYAFkAWgBbAFwAXQBeAF8AYABhAGIAYwBkAGUAZgBnAGgAaQBqAGsAbABtAG4AbwBwAHEAcgBzAHQAdQB2AHcAeAB5AHoAewB8AH0AfgB/AIAAgQCCAIMAhACFAIYAhwCIAIkAigCLAIwAjQCOAI8AkACRAJIAkwCUAJUAlgCXAJgAmQCaAJsAnACdAJ4AnwCgAKEAogCjAKQApQCmAKcAqACpAKoAqwCsAK0ArgCvALAAsQCyALMA"),
-"material": ExtResource("1_n4vvo"),
+"material": ExtResource("1_0yxkg"),
 "name": "Emissive_Master_Inst7",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
