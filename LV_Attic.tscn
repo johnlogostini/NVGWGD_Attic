@@ -2890,7 +2890,7 @@ gi_mode = 2
 mesh = ExtResource("125_hew8h")
 
 [node name="Path Follow 02" type="PathFollow3D" parent="Geometry/Floating Light Path" unique_id=545180998]
-transform = Transform3D(0.90092963, -0.41873845, 0.113487884, 0.4114004, 0.9076294, 0.08288989, -0.13771747, -0.0279904, 0.990038, -0.6552098, 5.18741, -2.4036055)
+transform = Transform3D(0.90092963, -0.41873845, 0.11348788, 0.4114004, 0.9076294, 0.082889885, -0.13771747, -0.0279904, 0.9900379, -0.6552098, 5.18741, -2.4036055)
 progress = 33.4
 
 [node name="SM Hedra02" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 02" unique_id=1555092757]
