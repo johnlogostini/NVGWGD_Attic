@@ -57,6 +57,7 @@
 [ext_resource type="ArrayMesh" uid="uid://dgmn735lbn213" path="res://Worlds/Attic/Assets/Props/Paintings/Meshes/SM_Painting_04.tres" id="55_t70gf"]
 [ext_resource type="ArrayMesh" uid="uid://djijlpkdb43dj" path="res://Worlds/Attic/Assets/Props/Paintings/Meshes/SM_Painting_05.tres" id="56_bbvsr"]
 [ext_resource type="ArrayMesh" uid="uid://btif61v0ks0t0" path="res://Worlds/Attic/Assets/Props/Paintings/Meshes/SM_Painting_06.tres" id="57_krj7m"]
+[ext_resource type="Material" uid="uid://213b4j6tjahj" path="res://Worlds/Attic/Assets/Props/Artifacts/Materials/MI_Artifact_04.tres" id="81_535cg"]
 [ext_resource type="Texture2D" uid="uid://doqnhafky0xkp" path="res://Worlds/Attic/Assets/Environments/Sandy_Area.hdr" id="81_l66dt"]
 [ext_resource type="ArrayMesh" uid="uid://bpglr0l3o8msg" path="res://Worlds/Attic/Assets/Props/Gramophone/Meshes/SM_Gramophone_Winder.tres" id="113_oyu3x"]
 [ext_resource type="ArrayMesh" uid="uid://sj4o3clyqyew" path="res://Worlds/Attic/Assets/Props/Gramophone/Meshes/SM_Gramophone_Record.tres" id="114_g5m1p"]
@@ -2885,6 +2886,7 @@ progress = 56.99
 
 [node name="SM Artifact 01" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 01" unique_id=2086930131]
 transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
+material_override = ExtResource("81_535cg")
 cast_shadow = 0
 gi_mode = 2
 mesh = ExtResource("125_hew8h")
@@ -2895,6 +2897,7 @@ progress = 33.4
 
 [node name="SM Artifact 02" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 02" unique_id=1555092757]
 transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
+material_override = ExtResource("81_535cg")
 gi_mode = 2
 mesh = ExtResource("126_5kink")
 
@@ -2903,6 +2906,7 @@ transform = Transform3D(-0.89631194, 0.26062843, -0.3587062, 1.4900961e-08, 0.80
 
 [node name="SM Artifact 03" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 03" unique_id=906867285]
 transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
+material_override = ExtResource("81_535cg")
 gi_mode = 2
 mesh = ExtResource("127_x5man")
 
