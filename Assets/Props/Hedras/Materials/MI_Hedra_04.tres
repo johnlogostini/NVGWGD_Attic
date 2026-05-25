@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://213b4j6tjahj"]
+
+[ext_resource type="Texture2D" uid="uid://clkwjsidj1okd" path="res://Materials/Textures/Default/T_Default_MASK_03.png" id="1_1m3gp"]
+
+[resource]
+resource_name = "Emissive_Master_Inst6"
+roughness = 0.5
+emission_enabled = true
+emission = Color(1, 0.41568628, 0, 1)
+emission_energy_multiplier = 350.0
+emission_texture = ExtResource("1_1m3gp")
