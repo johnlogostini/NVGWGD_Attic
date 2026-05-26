@@ -2877,39 +2877,6 @@ mesh = ExtResource("7_kc24v")
 transform = Transform3D(0, -1.0592515, 0, 0.7241772, 0, 1.8660444e-16, -1.1370253e-16, 0, 1.1884933, 0.30761078, 0.35941306, -17.507097)
 mesh = ExtResource("118_dbh4f")
 
-[node name="Floating Light Path" type="Path3D" parent="Geometry" unique_id=76182670]
-curve = SubResource("Curve3D_l66dt")
-
-[node name="Path Follow 01" type="PathFollow3D" parent="Geometry/Floating Light Path" unique_id=515419903]
-transform = Transform3D(-0.5184237, 0.16809063, 0.83838, 0.0058649397, 0.98111314, -0.19308038, -0.855053, -0.09518474, -0.50963914, -9.336985, 2.434993, -14.233571)
-progress = 56.99
-
-[node name="SM Artifact 01" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 01" unique_id=2086930131]
-transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
-material_override = ExtResource("81_535cg")
-cast_shadow = 0
-gi_mode = 2
-mesh = ExtResource("125_hew8h")
-
-[node name="Path Follow 02" type="PathFollow3D" parent="Geometry/Floating Light Path" unique_id=545180998]
-transform = Transform3D(0.90092963, -0.41873845, 0.11348784, 0.4114004, 0.9076294, 0.08288986, -0.13771747, -0.0279904, 0.9900376, -0.6552098, 5.18741, -2.4036055)
-progress = 33.4
-
-[node name="SM Artifact 02" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 02" unique_id=1555092757]
-transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
-material_override = ExtResource("81_535cg")
-gi_mode = 2
-mesh = ExtResource("126_5kink")
-
-[node name="Path Follow 03" type="PathFollow3D" parent="Geometry/Floating Light Path" unique_id=1170880294]
-transform = Transform3D(-0.89631194, 0.26062843, -0.3587062, 1.4900961e-08, 0.8089909, 0.58779573, 0.4433936, 0.52685547, -0.7251179, -7.859, 1.294, 2.412)
-
-[node name="SM Artifact 03" type="MeshInstance3D" parent="Geometry/Floating Light Path/Path Follow 03" unique_id=906867285]
-transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
-material_override = ExtResource("81_535cg")
-gi_mode = 2
-mesh = ExtResource("127_x5man")
-
 [node name="Cameras" type="Node3D" parent="." unique_id=179942554]
 
 [node name="Camera 01" type="Camera3D" parent="Cameras" unique_id=1973071989]
@@ -2936,6 +2903,40 @@ near = 0.099999994
 transform = Transform3D(0.79843295, 0.27455676, -0.535839, -2.64275e-06, 0.8899758, 0.4560078, 0.60208374, -0.3640902, 0.7105867, -7.0496893, 5.3066034, 10.488157)
 fov = 58.7155
 near = 0.099999994
+
+[node name="Floating Light Path" type="Path3D" parent="." unique_id=76182670]
+visible = false
+curve = SubResource("Curve3D_l66dt")
+
+[node name="Path Follow 01" type="PathFollow3D" parent="Floating Light Path" unique_id=515419903]
+transform = Transform3D(-0.5184237, 0.16809063, 0.83838, 0.0058649397, 0.98111314, -0.19308038, -0.855053, -0.09518474, -0.50963914, -9.336985, 2.434993, -14.233571)
+progress = 56.99
+
+[node name="SM Artifact 01" type="MeshInstance3D" parent="Floating Light Path/Path Follow 01" unique_id=2086930131]
+transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
+material_override = ExtResource("81_535cg")
+cast_shadow = 0
+gi_mode = 2
+mesh = ExtResource("125_hew8h")
+
+[node name="Path Follow 02" type="PathFollow3D" parent="Floating Light Path" unique_id=545180998]
+transform = Transform3D(0.90092963, -0.41873845, 0.113487825, 0.4114004, 0.9076294, 0.08288985, -0.13771747, -0.0279904, 0.9900375, -0.6552098, 5.18741, -2.4036055)
+progress = 33.4
+
+[node name="SM Artifact 02" type="MeshInstance3D" parent="Floating Light Path/Path Follow 02" unique_id=1555092757]
+transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
+material_override = ExtResource("81_535cg")
+gi_mode = 2
+mesh = ExtResource("126_5kink")
+
+[node name="Path Follow 03" type="PathFollow3D" parent="Floating Light Path" unique_id=1170880294]
+transform = Transform3D(-0.89631194, 0.26062843, -0.3587062, 1.4900961e-08, 0.8089909, 0.58779573, 0.4433936, 0.52685547, -0.7251179, -7.859, 1.294, 2.412)
+
+[node name="SM Artifact 03" type="MeshInstance3D" parent="Floating Light Path/Path Follow 03" unique_id=906867285]
+transform = Transform3D(2.5822375, -2.9461493, 0.80762255, 2.4808664, 2.6395028, 1.6965632, -1.7825127, -0.5943314, 3.5312064, 0, 0, 0)
+material_override = ExtResource("81_535cg")
+gi_mode = 2
+mesh = ExtResource("127_x5man")
 
 [node name="Voxel Global Illumination Volume" type="VoxelGI" parent="." unique_id=979389003]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4, -3)
