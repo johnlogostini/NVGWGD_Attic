@@ -116,7 +116,7 @@ point_count = 15
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_2h110"]
 panorama = ExtResource("81_l66dt")
-energy_multiplier = 10.0
+energy_multiplier = 35.0
 
 [sub_resource type="Sky" id="Sky_08n0k"]
 sky_material = SubResource("PanoramaSkyMaterial_2h110")
