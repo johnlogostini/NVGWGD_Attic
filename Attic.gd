@@ -8,6 +8,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	$"Geometry/Floating Light Path/Path Follow 01".progress += 4.5 * delta
-	$"Geometry/Floating Light Path/Path Follow 02".progress += 4.0 * delta
-	$"Geometry/Floating Light Path/Path Follow 03".progress += 3.5 * delta
+	$"Floating Light Path/Path Follow 01".progress += 4.5 * delta
+	$"Floating Light Path/Path Follow 02".progress += 4.0 * delta
+	$"Floating Light Path/Path Follow 03".progress += 3.5 * delta
