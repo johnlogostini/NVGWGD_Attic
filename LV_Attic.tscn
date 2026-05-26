@@ -274,20 +274,40 @@ omni_attenuation = 2.0
 
 [node name="Reflection Probes" type="Node3D" parent="Lighting" unique_id=1222047470]
 
-[node name="Reflection Probe Placeholder 01" type="Node3D" parent="Lighting/Reflection Probes" unique_id=1373541383]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.205711, 2.6432118, -6.9238987)
+[node name="Reflection Probe 01" type="ReflectionProbe" parent="Lighting/Reflection Probes" unique_id=1460299072]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.205711, 2.7649312, -6.9238987)
+max_distance = 20.0
+size = Vector3(10, 7.462494, 10)
+enable_shadows = true
+ambient_mode = 0
 
-[node name="Reflection Probe Placeholder 02" type="Node3D" parent="Lighting/Reflection Probes" unique_id=1038080942]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9403424, 2.6432118, -13.788853)
+[node name="Reflection Probe 02" type="ReflectionProbe" parent="Lighting/Reflection Probes" unique_id=951584184]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9403424, 2.7649312, -13.788853)
+max_distance = 20.0
+size = Vector3(10, 7.462494, 10)
+enable_shadows = true
+ambient_mode = 0
 
-[node name="Reflection Probe Placeholder 03" type="Node3D" parent="Lighting/Reflection Probes" unique_id=893395182]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5750346, 2.6432118, 5.3765526)
+[node name="Reflection Probe 03" type="ReflectionProbe" parent="Lighting/Reflection Probes" unique_id=2103534213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5750346, 2.7649312, 5.0467186)
+max_distance = 20.0
+size = Vector3(10, 7.462494, 10.659668)
+enable_shadows = true
+ambient_mode = 0
 
-[node name="Reflection Probe Placeholder 04" type="Node3D" parent="Lighting/Reflection Probes" unique_id=551649751]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.566585, 2.6432118, 8.277259)
+[node name="Reflection Probe 04" type="ReflectionProbe" parent="Lighting/Reflection Probes" unique_id=1209465541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.929133, 2.7649312, 7.7591925)
+max_distance = 20.0
+size = Vector3(11.274902, 7.462494, 11.036133)
+enable_shadows = true
+ambient_mode = 0
 
-[node name="Reflection Probe Placeholder 05" type="Node3D" parent="Lighting/Reflection Probes" unique_id=2075149677]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9268527, 1.6570898, 12.366987)
+[node name="Reflection Probe 05" type="ReflectionProbe" parent="Lighting/Reflection Probes" unique_id=2105457279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.9268527, 1.7788092, 12.966047)
+max_distance = 20.0
+size = Vector3(10, 7.462494, 11.19812)
+enable_shadows = true
+ambient_mode = 0
 
 [node name="Props" type="Node3D" parent="." unique_id=381577331]
 
